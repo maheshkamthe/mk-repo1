@@ -1,0 +1,6 @@
+{
+	"CompBooks": {
+		"Python": {"ID": "01", 	"Author": "Mr. ABC", 	"Cost": 1000},
+		"Java": {"ID": "02",	 "Author": "Mr. XYZ", 	"Cost": 2000}
+	}
+}
