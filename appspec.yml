@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: testdir1
+  - source: testdir2
     destination: /home/ec2-user/testdir1
