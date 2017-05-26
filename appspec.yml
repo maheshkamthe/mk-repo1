@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: testdir1
-    destination: /home/ec2-user/
+  - source: .\testdir1
+    destination: /home/ec2-user/algo-folder
