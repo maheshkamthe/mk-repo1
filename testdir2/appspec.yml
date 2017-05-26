@@ -1,7 +1,0 @@
-version: 0.0
-os: linux
-files:
-  - source: A15_json_loads_dumps.py
-    destination: /home/ec2-user/
-  - source: A16_json_loads_dumps.py
-    destination: /home/ec2-user/
