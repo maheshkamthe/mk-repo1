@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: A13_json_loads_dumps.py
+    destination: /home/ec2-user/testdir1
+  - source: testdir1
+    destination: /home/ec2-user/testdir1	 
+  - source: testdir2
+    destination: /home/ec2-user/testdir2	
