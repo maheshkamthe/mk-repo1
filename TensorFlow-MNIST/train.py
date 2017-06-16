@@ -1,4 +1,5 @@
 import os
+import sys
 
 from MNISTTrainer import MNISTTrainer
 
@@ -7,7 +8,7 @@ from MNISTTrainer import MNISTTrainer
 # directory settings
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-data_path = '/home/ubuntu/algodataset'
+data_path = sys.argv[1]
 model_path = script_dir + '/models/mnist-cnn'
 log_path = script_dir + '/logs/mnist-cnn'
 
