@@ -7,7 +7,7 @@ from MNISTTester import MNISTTester
 # directory settings
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-data_path = '~/algodataset'
+data_path = '/home/ubuntu/algodataset'
 model_path = script_dir + '/models/mnist-cnn'
 
 #####################################
@@ -22,4 +22,4 @@ mnist.predict_random()
 #################################
 # prediction test with image file
 # mnist = MNISTTester(model_path)
-mnist.predict('~/' + sys.argv[1])
+mnist.predict('/home/ubuntu/' + sys.argv[1])
