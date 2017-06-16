@@ -22,4 +22,4 @@ mnist.predict_random()
 #################################
 # prediction test with image file
 # mnist = MNISTTester(model_path)
-mnist.predict('/home/ubuntu/' + sys.argv[1])
+mnist.predict(sys.argv[1])
