@@ -7,7 +7,7 @@ from MNISTTrainer import MNISTTrainer
 # directory settings
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-data_path = script_dir + '/mnist/data/'
+data_path = '~/algodataset'
 model_path = script_dir + '/models/mnist-cnn'
 log_path = script_dir + '/logs/mnist-cnn'
 

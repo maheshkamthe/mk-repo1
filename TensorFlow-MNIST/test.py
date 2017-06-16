@@ -1,4 +1,5 @@
 import os
+import sys
 
 from MNISTTester import MNISTTester
 
@@ -6,7 +7,7 @@ from MNISTTester import MNISTTester
 # directory settings
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-data_path = script_dir + '/mnist/data/'
+data_path = '~/algodataset'
 model_path = script_dir + '/models/mnist-cnn'
 
 #####################################
@@ -21,6 +22,4 @@ mnist.predict_random()
 #################################
 # prediction test with image file
 # mnist = MNISTTester(model_path)
-mnist.predict(script_dir + '/imgs/digit-4.png')
-mnist.predict(script_dir + '/imgs/digit-2.png')
-mnist.predict(script_dir + '/imgs/digit-5.png')
+mnist.predict('~/' + sys.argv[1])

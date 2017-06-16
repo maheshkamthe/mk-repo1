@@ -49,7 +49,7 @@ class MNISTTrainer(MNIST):
     def build_training_op(self, learning_rate, decay):
         with tf.name_scope('cost') as scope:
             cost = tf.reduce_mean(
-                tf.nn.softmax_cross_entropy_with_logits(self.model, self.Y))
+                tf.nn.softmax_cross_entropy_with_logits(logits=self.model, labels=self.Y))
 
         self.add_log('Y', self.Y)
         self.add_log('cost', cost, 'scalar')
