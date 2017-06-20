@@ -16,8 +16,8 @@ mnist = MNISTTester(
             model_path=model_path,
             data_path=data_path)
 
-mnist.accuracy_of_testset()
-mnist.predict_random()
+#mnist.accuracy_of_testset()
+#mnist.predict_random()
 
 #################################
 # prediction test with image file
