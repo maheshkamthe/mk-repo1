@@ -20,9 +20,9 @@ mnist = MNISTTrainer(
             log_path=log_path)
 
 mnist.training(
-    learning_rate=0.001,
+    learning_rate=0.0005,
     decay=0.9,
-    training_epochs=50,
+    training_epochs=20,
     batch_size=100,
     p_keep_conv=0.8,
     p_keep_hidden=0.5)

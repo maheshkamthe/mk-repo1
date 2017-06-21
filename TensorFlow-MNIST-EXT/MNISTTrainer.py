@@ -54,7 +54,8 @@ class MNISTTrainer(MNIST):
         self.add_log('Y', self.Y)
         self.add_log('cost', cost, 'scalar')
 
-        self.train_op = tf.train.RMSPropOptimizer(learning_rate, decay).minimize(cost)
+        #self.train_op = tf.train.RMSPropOptimizer(learning_rate, decay).minimize(cost)
+		  self.train_op = tf.train.AdamOptimizer(learning_rate).minimize(cost)
 
     def training_once(self, batch_size, p_keep_conv, p_keep_hidden):
         total_batch = int(self.mnist.train.num_examples/batch_size)
